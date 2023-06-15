@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-//Program logic goes here
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
