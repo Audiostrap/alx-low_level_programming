@@ -1,12 +1,10 @@
 #include <stdio.h>
 /**
- * main - function prints a string using the puts function.
- *
- * * return - is 0 to indicate successful execution.
+ * main - prints the phrase "Programming is like building a multilingual puzzle
+ * Return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
-/*Return value of 0 indicating successful executin*/
 }
