@@ -2,7 +2,7 @@
 /**
  * main - print all possible combinations of two digits
  *
- *Retun: 0 (suceces)
+ * Retun: 0 (success)
 */
 
 int main(void)
@@ -25,5 +25,5 @@ putchar(' ');
 }
 
 putchar('\n');
-return 0;
+return (0);
 }
