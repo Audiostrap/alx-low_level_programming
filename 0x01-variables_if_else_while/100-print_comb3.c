@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - print all possible combinations of two digits
- * 
- * Retun: 0 (suceces):
+ *
+ *Retun: 0 (suceces)
 */
 
 int main(void)
@@ -16,7 +16,7 @@ for (j = i + 1; j <= 9; j++)
 {
 putchar('0' + i);
 putchar('0' + j);
-if (i < 8 || j < 9) 
+if (i < 8 || j < 9)
 {
 putchar(',');
 putchar(' ');
@@ -24,6 +24,6 @@ putchar(' ');
 }
 }
 
- putchar('\n');
- return 0;
+putchar('\n');
+return 0;
 }
