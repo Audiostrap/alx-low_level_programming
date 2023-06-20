@@ -1,3 +1,5 @@
-#include <stdio.h>
-void _putchar(char i);
-int main();
+#ifndef main_h
+#define main_h
+
+int _putchar(char);
+#endif
