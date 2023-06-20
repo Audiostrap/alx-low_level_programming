@@ -1,1 +1,1 @@
-A readme file for C programing
+READ ME FILE FOR FUNCTIONS IN C & NEESTED LOOPS~
