@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+
 /**
  * main - prints _put char followed by a new line
  *
