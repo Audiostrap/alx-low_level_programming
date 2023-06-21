@@ -4,7 +4,7 @@
  *
  * @num1: The character to be checked
  * @num2: The character to be checked
- * Return: the result 
+ * Return: the result
  */
 int add(int num1, int num2)
 {
