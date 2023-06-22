@@ -19,7 +19,7 @@ j = 0;
 
 while (j < i)
 {
-putchar(j);
+putchar('0'j);
 j++;
 }
 i++;
