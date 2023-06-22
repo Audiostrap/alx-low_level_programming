@@ -8,12 +8,20 @@
 int main(void)
 {
 int i;
+int j;
 
 printf("Infinite loop incoming :(\n");
 
-while (i = 0)
+while (i < 10)
 {
-putchar(i);
+
+j = 0;
+
+while (j < i)
+{
+putchar(j);
+j++;
+}
 i++;
 }
 
