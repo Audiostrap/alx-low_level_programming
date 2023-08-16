@@ -10,14 +10,14 @@ int main(void)
 	
 	previous = 0;
 	current = 1;
-	before_previous = 0;
+	before_previous = previous;
 
 	for (i = 0; i < 50; i++)
 	{
 		next = previous + current;
 		if (next < 0)
 		{
-			next = previous + before_previous;
+			next = current + before_previous;
 		}
 		printf("%d, ", next);
 		before_previous = previous;
