@@ -8,19 +8,19 @@
 int main(void)
 {
 	int i = 0;
-	unsigned long long j = 1, k = 2;
+	int j = 1, k = 2;
 
 	while (i < 98)
 	{
 		if (i == 0)
-			printf("%llu", j);
+			printf("%d", j);
 		else if (i == 1)
-			printf(", %llu", k);
+			printf(", %d", k);
 		else
 		{
 			k += j;
 			j = k - j;
-			printf(", %llu", k);
+			printf(", %d", k);
 		}
 
 
