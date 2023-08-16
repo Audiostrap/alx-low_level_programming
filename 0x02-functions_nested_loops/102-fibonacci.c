@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i, current, before_previous, next, previous;
+	int i, current, next, previous;
 	
 	previous = 0;
 	current = 1;
