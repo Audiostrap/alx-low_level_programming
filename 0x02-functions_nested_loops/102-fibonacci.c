@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i, current, next, previous;
+	
 	previous = 0;
 	current = 1;
 	for (i = 0; i < 50; i++)
@@ -14,7 +15,7 @@ int main(void)
 		next = previous + current;
 		if (next < 0)
 		{
-			next++;
+			next+= 1;
 		}
 		printf("%d, ", next);
 		previous = current;
