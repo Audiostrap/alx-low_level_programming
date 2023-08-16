@@ -14,7 +14,7 @@ int main(void)
 		next = previous + current;
 		if (next < 0)
 		{
-			next --;
+			next = previous;
 		}
 		printf("%d, ", next);
 		previous = current;
