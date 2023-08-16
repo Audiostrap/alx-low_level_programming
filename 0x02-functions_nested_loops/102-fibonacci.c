@@ -6,18 +6,21 @@
  */
 int main(void)
 {
-	int i, current, next, previous;
+	int i, current, before_previous, next, previous;
+	
 	previous = 0;
 	current = 1;
+	before_previous = 0;
 
 	for (i = 0; i < 50; i++)
 	{
 		next = previous + current;
 		if (next < 0)
 		{
-			next = previous + previous;
+			next = previous + before_previous;
 		}
 		printf("%d, ", next);
+		before_previous = previous;
 		previous = current;
 		current = next;
 	}
