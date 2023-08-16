@@ -7,19 +7,16 @@
 int main(void)
 {
 	int i, current, next, previous;
-	
-	previous = 1;
-	current = 2;
-	
-	printf("%d, %d, ", previous, current);
-	for (i = 2; i < 50; i++)
+	previous = 0;
+	current = 1;
+	for (i = 0; i < 50; i++)
 	{
 		next = previous + current;
-		printf("%d, ", next);
-		if (i < 49)
+		if (next < 0)
 		{
-			printf(", ");
+			next++;
 		}
+		printf("%d, ", next);
 		previous = current;
 		current = next;
 	}
