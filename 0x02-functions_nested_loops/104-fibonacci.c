@@ -10,23 +10,15 @@ int main(void)
 	int i = 0;
 	int j = 1, k = 2;
 
-	while (i < 98)
+	printf("%d, %d", j, k);
+
+	for (i = 2; i < 98; i++)
 	{
-		if (i == 0)
-			printf("%d", j);
-		else if (i == 1)
-			printf(", %d", k);
-		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %d", k);
-		}
-
-
-		++i;
+		int temp = k;
+		k += j;
+		j = temp;
+		printf(", %d", k);
 	}
-
 	printf("\n");
 	return (0);
 }
