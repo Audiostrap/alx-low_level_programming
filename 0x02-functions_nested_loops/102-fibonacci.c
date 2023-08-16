@@ -6,11 +6,9 @@
  */
 int main(void)
 {
-	int i, current, next, previous;
-	
-	previous = 0;
-	current = 1;
-	for (i = 1; i < 50; i++)
+	int i, current = 1, next, previous = 0;
+
+	for (i = 1; i <= 50; i++)
 	{
 		next = previous + current;
 		printf("%d, ", next);
