@@ -10,13 +10,9 @@ int main(void)
 	
 	previous = 0;
 	current = 1;
-	for (i = 0; i < 50; i++)
+	for (i = 1; i < 50; i++)
 	{
 		next = previous + current;
-		if (next < 0)
-		{
-			next = previous - current;
-		}
 		printf("%d, ", next);
 		previous = current;
 		current = next;
