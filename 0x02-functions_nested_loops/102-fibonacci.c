@@ -8,7 +8,8 @@ int main(void)
 {
 	int i, current, next, previous;
 	
-	previous = 1, current = 2, next;
+	previous = 1;
+	current = 2;
 	
 	printf("%d, %d, ", previous, current);
 	for (i = 2; i < 50; i++)
