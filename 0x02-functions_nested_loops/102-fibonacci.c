@@ -6,15 +6,22 @@
  */
 int main(void)
 {
-	int i, previous = 0, current = 1, next;
-
-	for (i = 0; i < 50; i++)
+	int i, current, next, previous;
+	
+	previous = 1, current = 2, next;
+	
+	printf("%d, %d, ", previous, current);
+	for (i = 2; i < 50; i++)
 	{
 		next = previous + current;
 		printf("%d, ", next);
+		if (i < 49)
+		{
+			printf(", ");
+		}
 		previous = current;
 		current = next;
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
