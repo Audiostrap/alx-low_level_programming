@@ -12,7 +12,7 @@ void print_most_numbers(void)
 
 	for (result = 0; result <= 9; result++)
 	{
-		if (result == '2' || result == '4')
+		if (result == 2 || result == 4)
 		{
 			continue;
 		}
