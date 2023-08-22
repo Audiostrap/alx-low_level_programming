@@ -8,13 +8,27 @@
  */
 void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (str[i] != '\0')
+	for (i = 0; i < _strlen(str); i += 2)
 	{
-		if (i % 2 == 0)
-			putchar(str[i]);
-		i++;
+		_putchar(str[i]);
 	}
 	_putchar('\n');
+}
+
+/**
+  * strlen - finds the length of a string.
+  * Return: length of c.
+  * @pointer: pointer.
+  */
+int _strlen(char *pointer)
+{
+	int c = 0;
+
+	while (*(pointer + c) != '\0')
+	{
+		c++;
+	}
+	return (c);
 }
