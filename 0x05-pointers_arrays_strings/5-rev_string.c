@@ -8,40 +8,13 @@
  */
 void rev_string(char *s)
 {
-	int length, c;
-	char *begin, *end, temp;
+	int i, j;
+	char temp;
 
-	length = string_length(s);
-
-	begin = s;
-	end = s;
-
-	for (c = 0; c < (length - 1); c++)
-		end++;
-
-	for (c = 0; c < length / 2; c++)
+	for (i = 0, j = strlen(s) - 1; i < j; i++, j--)
 	{
-		temp = *end;
-		*end = *begin;
-		*begin = temp;
-
-		begin++;
-		end--;
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
 	}
-}
-
-/**
-  * string_length - finds the length of a string.
-  * Return: length of c.
-  * @pointer: pointer.
-  */
-int string_length(char *pointer)
-{
-	int c = 0;
-
-	while (*(pointer + c) != '\0')
-	{
-		c++;
-	}
-	return (c);
 }
