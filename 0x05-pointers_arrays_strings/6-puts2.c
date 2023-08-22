@@ -18,7 +18,7 @@ void puts2(char *str)
 }
 
 /**
-  * strlen - finds the length of a string.
+  *_strlen - finds the length of a string.
   * Return: length of c.
   * @pointer: pointer.
   */
