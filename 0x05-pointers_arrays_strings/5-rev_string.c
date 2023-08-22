@@ -1,5 +1,5 @@
 #include "main.h"
-int string_length(char *pointer);
+
 /**
  * rev_string - function that reverses a string.
  * @s: stores the string
@@ -8,19 +8,26 @@ int string_length(char *pointer);
  */
 void rev_string(char *s)
 {
-	int length, c;
-	char *begin, *end;
+	int i, c, k;
+	char *a, aux;
 
-	length = string_length(s);
-	begin = s;
-	end = s + length - 1;
+	a = s;
 
-	for (c = 0; c < length / 2; c++)
+	while (s[c] != '\0')
 	{
-		char temp = *end;
-		*end = *begin;
-		*begin = temp;
-		begin++;
-		end--;
+		c++;
+	}
+
+	for (k = 1; k < c; k++)
+	{
+		a++;
+	}
+
+	for (i = 0; i < (c / 2); i++)
+	{
+		aux = s[i];
+		s[i] = *a;
+		*a = aux;
+		a--;
 	}
 }
